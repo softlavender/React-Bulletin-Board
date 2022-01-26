@@ -1,7 +1,7 @@
 const PostLiked = _ => {
 
   return (
-    <p>You have liked this post!</p>
+    <span className="like-post">You have liked this post!</span>
   )
 }
 export default PostLiked

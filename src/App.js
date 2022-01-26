@@ -7,14 +7,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <span>React - Bulletin Board</span>
       </header>
 
       <main className="App-main">
         <BulletinBoard />
       </main>
-
-      <footer className="App-footer">
-      </footer>
     </div>
   );
 }
