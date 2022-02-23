@@ -8,12 +8,14 @@ export default function ReactPost(props) {
   return (
     <>
     <div className="post">
-      <div className="like-area">
-        {isLiked ? <PostLiked /> :
-        <button className="like-post like-button fa fa-heart" onClick={_ => setIsLIked(true)} title="Like the post"></button>}
+      <div className="like-and-question">
+        <div className="like-area">
+          {isLiked ? <PostLiked /> :
+          <button className="like-post like-button fa fa-heart" onClick={_ => setIsLIked(true)} title="Like the post"></button>}
+        </div>
+        
+        <p className="questions">{props.q.question}</p>
       </div>
-      
-      <p className="questions">{props.q.question}</p>
       
       <div className="answers">
         {showAnswers && props.q.answer.map((ans, i) => <p className="answer" key={i}>{ans}</p>)}

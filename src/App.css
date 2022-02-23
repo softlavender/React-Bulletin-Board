@@ -21,61 +21,61 @@
     justify-content: center;
   }
     .post {
-      
       display: grid;
-      grid-template: 40px auto 1fr / minmax(320px, 420px);
+      grid-template: auto minmax(200px, 400px) / minmax(320px, 420px);
     }
-      .like-area {
+      .like-and-question {
         margin: 0 15px;
+        padding: 0 15px;
         border-start-start-radius: 5px;
         border-start-end-radius: 5px;
         background-image: linear-gradient(to right, #543bd7, #9e54d8);
-        
-        display: flex;
-        flex-flow: row-reverse;
+        align-self: end;
       }
-        .like-post {
-          margin-right: 15px;
-          align-self: center;
-          font-size: .7rem;
-          color: yellow;
+        .like-area {
+          height: 40px;
+          display: flex;
+          flex-flow: row-reverse;
         }
-        .like-button {
-          border: none;
-          background-color: unset;
-          font-size: .8rem;
-          cursor: pointer;
-        }
+          .like-post {
+            align-self: center;
+            font-size: .7rem;
+            color: yellow;
+          }
+          .like-button {
+            border: none;
+            background-color: unset;
+            font-size: .8rem;
+            cursor: pointer;
+          }
 
-      .questions {
-        margin: 0 15px;
-        padding: 0 15px 30px;
-        background-image: linear-gradient(to right, #543bd7, #9e54d8);
-        font-style: italic;
-        /* font-weight: lighter; */
-        font-size: 18px;
-      }
-      .answers {
-        align-self: start;
-        padding: 10px 30px;
-        border-radius: 5px;
-        background-color: white;
-      }
-        .show-answers {
-          display: block;
-          margin: auto;
-          padding: 0;
-          border: none;
-          background-color: unset;
-          font-size: 1rem;
-          color: #543bd7;
-          cursor: pointer;
-          transition: .2s ease-out;
-        }
-        .down {
-          transform: rotate(180deg);
-        }
-        .answer {
+        .questions {
+          margin: 0 0 20px 0;
+          font-style: italic;
           font-weight: lighter;
-          color: #000;
+          font-size: 18px;
         }
+        .answers {
+          align-self: start;
+          padding: 10px 30px;
+          border-radius: 5px;
+          background-color: white;
+        }
+          .show-answers {
+            display: block;
+            margin: auto;
+            padding: 0;
+            border: none;
+            background-color: unset;
+            font-size: 1rem;
+            color: #543bd7;
+            cursor: pointer;
+            transition: .2s ease-out;
+          }
+          .down {
+            transform: rotate(180deg);
+          }
+          .answer {
+            font-weight: lighter;
+            color: #000;
+          }
